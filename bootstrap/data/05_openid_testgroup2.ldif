@@ -1,0 +1,7 @@
+dn: ou=testgroup2,ou=openid,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+description: Example OID LDAP test group 2 users
+ou: people
+ou: openid
+ou: testgroup2

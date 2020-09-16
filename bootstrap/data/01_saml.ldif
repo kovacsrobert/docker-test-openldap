@@ -1,0 +1,6 @@
+dn: ou=saml,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+description: Example SAML LDAP users
+ou: people
+ou: saml

@@ -1,0 +1,11 @@
+dn: cn=dockeruser2,ou=saml,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: dockeruser2
+sn: Bond
+givenName: James
+mail: dockeruser2@intland.com
+uid: e11b9613-a4c9-4dcd-9ea3-a8ba8efa5297
+userPassword:: e1NTSEF9c2dlNVNMVmtWTW5ibFJwOGRBWTJIRmJzUHpVL3RXM0oK

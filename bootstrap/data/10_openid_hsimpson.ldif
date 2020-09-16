@@ -1,0 +1,11 @@
+dn: cn=Homer Simpson,ou=openid,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Homer Simpson
+sn: Simpson
+givenName: Homer
+mail: hsimpson@example.com
+uid: 90344.ASDFJWFC
+userPassword:: e1NTSEF9c2dlNVNMVmtWTW5ibFJwOGRBWTJIRmJzUHpVL3RXM0oK

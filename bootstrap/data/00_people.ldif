@@ -1,5 +1,5 @@
-dn: ou=people,dc=planetexpress,dc=com
+dn: ou=people,dc=example,dc=com
 objectClass: top
 objectClass: organizationalUnit
-description: Planet Express crew
+description: Example users
 ou: people

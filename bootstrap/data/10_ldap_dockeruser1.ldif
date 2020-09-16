@@ -1,0 +1,11 @@
+dn: cn=ldap-user-1,ou=ldap,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: ldap-user-1
+sn: Bond
+givenName: James
+mail: ldap-user-1@intland.com
+uid: ldap-user-1
+userPassword:: e1NTSEF9c2dlNVNMVmtWTW5ibFJwOGRBWTJIRmJzUHpVL3RXM0oK

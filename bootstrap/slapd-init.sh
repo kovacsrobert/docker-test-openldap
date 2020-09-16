@@ -4,9 +4,9 @@ set -eu
 readonly DATA_DIR="/bootstrap/data"
 readonly CONFIG_DIR="/bootstrap/config"
 
-readonly LDAP_DOMAIN=planetexpress.com
-readonly LDAP_ORGANISATION="Planet Express, Inc."
-readonly LDAP_BINDDN="cn=admin,dc=planetexpress,dc=com"
+readonly LDAP_DOMAIN=example.com
+readonly LDAP_ORGANISATION="Example LDAP"
+readonly LDAP_BINDDN="cn=admin,dc=example,dc=com"
 readonly LDAP_SECRET=GoodNewsEveryone
 
 readonly LDAP_SSL_KEY="/etc/ldap/ssl/ldap.key"
@@ -74,7 +74,8 @@ configure_memberof_overlay(){
 configure_admin_config_pw(){
   echo "Configure admin config password..."
   adminpw=$(slappasswd -h {SSHA} -s "${LDAP_SECRET}")
-  sed -i s/{ADMINPW}/${adminpw}/g ${CONFIG_DIR}/configadminpw.ldif
+  #echo "adminpw: ${adminpw}"
+  sed -i "s/{ADMINPW}/${adminpw}/g" "${CONFIG_DIR}/configadminpw.ldif"
   ldapmodify -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/configadminpw.ldif -Q
 }
 

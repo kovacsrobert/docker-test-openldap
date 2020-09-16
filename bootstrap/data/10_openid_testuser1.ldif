@@ -1,0 +1,11 @@
+dn: cn=Test User 1,ou=testgroup1,ou=openid,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Test User 1
+sn: User
+givenName: Test
+mail: testuser1@example.com
+uid: 90342.ASDFJWFA
+userPassword:: e1NTSEF9c2dlNVNMVmtWTW5ibFJwOGRBWTJIRmJzUHpVL3RXM0oK
